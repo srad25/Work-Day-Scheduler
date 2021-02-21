@@ -7,8 +7,8 @@ $(document).ready(function () {
     //Set saveBtn click listener
     $(".saveBtn").on("click", function () {
         //get nearby values.
-        var text = $(this).siblings(".description").val(); // taken the change from the sibling html description attribute
-        var time = $(this).parent().attr("id"); // taken the change from the parent html id attribute
+        var text = $(this).siblings(".description").val(); 
+        var time = $(this).parent().attr("id"); 
 
         //then save in local storage.
         localStorage.setItem(time, text);
@@ -26,10 +26,10 @@ $(document).ready(function () {
     
 
     function timeKeeping() {
-        //get current number of hours.
+        //Get current number of hours.
         var rightNow = moment().hour(); 
 
-        // loop over time blocks
+        // Loop over time blocks
         $(".time-block").each(function () {
             var clockHour = parseInt($(this).attr("id").split("hour")[1]);
 
