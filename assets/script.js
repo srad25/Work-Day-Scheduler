@@ -11,7 +11,7 @@ $(document).ready(function () {
         var time = $(this).parent().attr("id"); 
 
         //then save in local storage.
-        localStorage.setItem(time, text);
+        localStorage.setItem(text, time);
     })
     //Get item from local storage if any for each hour
     $("#hour9 .description").val(localStorage.getItem("hour9"));
